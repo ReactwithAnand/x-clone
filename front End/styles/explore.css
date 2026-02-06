@@ -75,6 +75,10 @@
     top: 0;
     background-color: #000;
  }
+ .whotofollowcont{
+    
+    padding: 1rem 1rem;
+ }
 
  /* Navigation tabs */
  .nav-tabs {
@@ -213,6 +217,13 @@
      align-items: center;
      margin-bottom: 16px;
  }
+ .foavatar{
+    margin-right: 0.5rem;
+    border-radius: 50%;
+ }
+ .right-sidebar-card{
+    margin-top: 1rem;
+ }
 
  .follow-left {
      display: flex;
@@ -227,6 +238,7 @@
      border-radius: 9999px;
      object-fit: cover;
      flex-shrink: 0;
+     margin-right: 0px;
  }
 
  .follow-info {
@@ -350,3 +362,106 @@
      border-left: 1px solid #2f3336;
      border-right: 1px solid #2f3336;
  }
+
+  .news-container {
+            background-color: #000000;
+            color: #ffffff;
+            width: 22rem;
+            margin :16px 0px;
+            padding: 12px 16px;
+            border-radius: 24px;
+            border: 1px solid #333;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        /* Header section */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+        }
+
+        .header h1 {
+            font-size: 22px;
+            font-weight: 800;
+            margin: 0;
+            letter-spacing: -0.5px;
+        }
+
+        .close-btn {
+            cursor: pointer;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+        
+        .close-btn:hover {
+            
+            opacity: 1;
+        }
+
+        /* News Item styling */
+        .news-item {
+            margin-bottom: 36px;
+        }
+
+        .news-item:last-child {
+            margin-bottom: 8px;
+        }
+
+        .news-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.35;
+            margin-bottom: 12px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .news-title:hover {
+            text-decoration: underline;
+        }
+
+        /* Metadata & Avatar stack */
+        .meta-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .avatar-stack {
+            display: flex;
+            align-items: center;
+        }
+
+        .avatar {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 2px solid #000;
+            margin-left: -8px;
+            object-fit: cover;
+            background-color: #333;
+        }
+
+        .avatar:first-child {
+            margin-left: 0;
+        }
+
+        .meta-text {
+            color: #71767b;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .meta-text span::before {
+            content: " · ";
+            margin: 0 2px;
+        }
+
+        /* Placeholder images using colored divs since external images might break */
+        .p-1 { background: linear-gradient(45deg, #ff6b6b, #f06595); }
+        .p-2 { background: linear-gradient(45deg, #845ef7, #5c7cfa); }
+        .p-3 { background: linear-gradient(45deg, #339af0, #22b8cf); }
+        .p-4 { background: linear-gradient(45deg, #20c997, #51cf66); }
+        .p-5 { background: linear-gradient(45deg, #fcc419, #ff922b); }
